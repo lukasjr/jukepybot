@@ -1,5 +1,6 @@
 # jukepybot
 
+[![CircleCI](https://circleci.com/gh/lukasjr/jukepybot.svg?style=svg)](https://circleci.com/gh/lukasjr/jukepybot)
 
 ## .env file
 | Key | Value |
