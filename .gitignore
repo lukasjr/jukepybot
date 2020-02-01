@@ -1,3 +1,6 @@
 .env
 .vscode
 instance
+.pytest_cache
+.coverage
+request_info.md

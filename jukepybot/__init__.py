@@ -63,6 +63,7 @@ def create_app(test_config=None):
     @app.route("/vidya", methods=['POST'])
     def vidya():
         # Verify slack signature using event adapter
+        # print(request.headers)
         ts = request.headers.get('X-Slack-Request-Timestamp')
         sig = request.headers.get('X-Slack-Signature')
         slack_events_adapter.server.verify_signature(ts, sig)
