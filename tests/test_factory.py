@@ -1,3 +1,5 @@
+import os
+
 from jukepybot import create_app
 
 
@@ -9,6 +11,6 @@ def test_config():
 def test_vidya(client):
     response = client.post(
         '/vidya', data={'text': '', 'user_id': 'U3130P5AA'}, 
-         headers={'X-Slack-Signature': 'v0=d1fbb780735dd5fc6415b939a6862116560c519cadcd16e9cee655dd690f1a79',
-                  'X-Slack-Request-Timestamp': '1580594621'})
+         headers={'X-Slack-Signature': os.environ['SLACK_SIGNATURE'],
+                  'X-Slack-Request-Timestamp': os.environ['SLACK_TIMESTAMP']})
     assert b'Using Steam ID' in response.data
