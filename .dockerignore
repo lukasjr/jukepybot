@@ -4,4 +4,9 @@
 .Pipfile
 .Pipfile.lock
 /instance
-/test
+/tests
+.pytest_cache
+.vscode
+.circleci
+heroku.yml
+setup.cfg
