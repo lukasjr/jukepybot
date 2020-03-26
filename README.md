@@ -10,4 +10,4 @@
 | STEAM_API_KEY| API key for steam |
 | FLASK_APP| Location of the flask application (jukepybot in this case) |
 | FLASK_ENV| development/production |
-| SECRET_KEY| Secret key using for securely signing the session cookie and other security needs |
+| SECRET_KEY| Secret key used for securely signing the session cookie and other security needs |
