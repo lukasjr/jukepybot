@@ -16,7 +16,7 @@ itsdangerous==1.1.0
 jinja2==2.11.1
 markupsafe==1.1.1
 multidict==4.7.4
-protobuf==3.11.2
+protobuf==3.18.3
 pycparser==2.19
 pyee==7.0.1
 requests==2.22.0
